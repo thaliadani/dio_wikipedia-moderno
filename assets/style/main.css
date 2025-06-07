@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecalho img {
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.menu-lateral-esquerdo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  height: 50%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.menu-lateral-esquerdo ul,
+.menu-lateral-direito ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-lateral-esquerdo li,
+.menu-lateral-direito li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-lateral-esquerdo a,
+.menu-lateral-direito a {
+  text-decoration: none;
+  color: #333;
+}
+.menu-lateral-esquerdo a:hover,
+.menu-lateral-direito a:hover {
+  color: #007bff;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}
+
+.principal section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 2rem;
+}
+
+.principal section figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal section img {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 500px;
+  height: auto;
+}
+
+.principal section h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.principal section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  text-align: center;
+}
+.principal section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.menu-lateral-direito {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  height: 50%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
