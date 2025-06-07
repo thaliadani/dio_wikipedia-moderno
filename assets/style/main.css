@@ -106,18 +106,15 @@ body {
 }
 
 .principal section h1 {
-  margin-bottom: 1rem;
   font-size: 2rem;
   text-align: center;
 }
 .principal section h2 {
-  margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #2c2c2c;
   text-align: center;
 }
 .principal section p {
-  margin-bottom: 1rem;
   line-height: 1.6;
 }
 
