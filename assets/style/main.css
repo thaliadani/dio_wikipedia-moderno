@@ -10,22 +10,35 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 .cabecalho {
-  display: flex;
-  align-items: center;
+  background-color: #fff;
   padding: 1rem;
-  color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
 }
 
 .cabecalho figure {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .cabecalho img {
@@ -34,18 +47,102 @@ body {
   margin-right: 1rem;
 }
 
-.menu-lateral-esquerdo {
+.container-geral {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: fixed;
-  top: 10%;
-  left: 0;
-  height: 50%;
-  width: 250px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
   padding: 1rem;
+}
+
+.menu-lateral-esquerdo {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.menu-lateral-direito {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #a2a9b1;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.menu-lateral-esquerdo ul,
+.menu-lateral-direito ul {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.menu-lateral-esquerdo li,
+.menu-lateral-direito li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-lateral-esquerdo a,
+.menu-lateral-direito a {
+  text-decoration: none;
+  color: #0645ad;
+  font-size: 0.9rem;
+}
+
+.menu-lateral-esquerdo a:hover,
+.menu-lateral-direito a:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  background-color: #fff;
+  padding: 2rem;
+  width: 100%;
+}
+
+.principal section {
+  margin-bottom: 2.5rem;
+}
+
+.principal section h1 {
+  font-size: 2.2rem;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 1rem;
+}
+
+.principal section h2 {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #a2a9b1;
+  margin: 1.5rem 0 1rem;
+}
+
+.principal section p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.principal section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.trailer iframe {
+  width: 100%;
+  max-width: 560px;
+  border: none;
+}
+
+/* Responsividade para Desktop */
+@media (min-width: 992px) {
+  .container-geral {
+    flex-direction: row;
+  }
+  .menu-lateral-esquerdo, .menu-lateral-direito {
+    width: 250px;
+    flex-shrink: 0;
+  }
 }
 
 .menu-lateral-esquerdo ul,
